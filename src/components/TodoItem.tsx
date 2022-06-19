@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './TodoItem.module.css';
 const TodoItem: React.FC<{
   text: string;
-  onRemoveTodo: (id: string) => void;
+  onRemoveTodo: () => void;
 }> = (props) => {
   return (
     <li className={styles.item} onClick={props.onRemoveTodo}>
