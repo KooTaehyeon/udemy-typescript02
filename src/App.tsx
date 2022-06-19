@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Todos from './components/Todos';
+import Todo from './models/todo';
 
 const App = () => {
-  const [items, setItems] = useState(['Learn React,', 'Learn TypeScript']);
+  const todos = [new Todo('Learn React'), new Todo('Learn TypeScript')];
 
   return (
     <div>
-      <Todos items={items} />
+      <Todos items={todos} />
     </div>
   );
 };
